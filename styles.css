@@ -9,11 +9,12 @@
   
   body {
     margin: 0;
+    overflow: hidden;
     
   }
   
   .background{
-    background : url("background1.jpg") no-repeat  center/cover;
+    background : url("./background2.gif") no-repeat center/cover;
     /* background-color: #edf1f2; */
     content:'';
     position: absolute;
@@ -77,13 +78,13 @@
   .cell.x::before,
   .cell.x::after,
   .cell.circle::before {
-    background-color: black;
+    background-color: rgb(176, 250, 2);
   }
   
   .board.x .cell:not(.x):not(.circle):hover::before,
   .board.x .cell:not(.x):not(.circle):hover::after,
   .board.circle .cell:not(.x):not(.circle):hover::before {
-    background-color: rgb(255, 251, 4);
+    background-color: lightgreen;
   }
   
   .cell.x::before,
